@@ -1,0 +1,587 @@
+{
+  "source_csv": "/Users/mika/Desktop/open_alex_final.csv",
+  "source_workbook": "/Users/mika/Desktop/Book1.xlsx",
+  "csv_document_count": 188224,
+  "targets": [
+    {
+      "row": 2,
+      "title": "Closer in the Gap: Towards Portable Performance on RISC-V Vector Processors",
+      "summary": "The RISC-V Vector Extension~(RVV) is a cornerstone for supporting compute throughout in scientific and machine learning workloads. Yet compiler support and performance monitoring on real RVV~1.0 hardware are still evolving. In this work, we design a suite of assembly microbenchmarks to establish performance ceilings and calibrate performance counters on RVV hardware. Leveraging the assembly benchmarks, we find that predication overhead and stride load pose performance challenges that current compiler cost models do not yet fully address. Moreover, we present the first evaluation of GCC~15 and LLVM~21 autovectorization in HPC and ML proxy applications. GCC~15 outperforms LLVM~21 in four out of six applications. LLVM~21 only outperforms GCC~15 in SGEMM and DGEMM, driven by more aggressive instruction reduction confirmed through validated \\texttt{perf} counters on the RVV hardware. We further show that the default LMUL selection in compilers performs close to the optimal. To study the RVV support for product-level application, we also evaluate the state-vector quantum simulator, Google's Qsim, with both manual RVV intrinsics and compiler auto-vectorization, revealing immaturity in current RVV compiler for complicated memory access pattern.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 146.643482,
+          "csv_row": 173003,
+          "title": "Ara: A 1 GHz+ Scalable and Energy-Efficient RISC-V Vector Processor with Multi-Precision Floating Point Support in 22 nm FD-SOI",
+          "summary": "In this paper, we present Ara, a 64-bit vector processor based on the version 0.5 draft of RISC-V's vector extension, implemented in GlobalFoundries 22FDX FD-SOI technology. Ara's microarchitecture is scalable, as it is composed of a set of identical lanes, each containing part of the processor's ve…",
+          "id": "http://arxiv.org/abs/1906.00478v3",
+          "doi": "10.1109/TVLSI.2019.2950087",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 76.738538,
+          "csv_row": 172862,
+          "title": "PULP-NN: Accelerating Quantized Neural Networks on Parallel Ultra-Low-Power RISC-V Processors",
+          "summary": "We present PULP-NN, an optimized computing library for a parallel ultra-low-power tightly coupled cluster of RISC-V processors. The key innovation in PULP-NN is a set of kernels for Quantized Neural Network (QNN) inference, targeting byte and sub-byte data types, down to INT-1, tuned for the recent …",
+          "id": "http://arxiv.org/abs/1908.11263v1",
+          "doi": "10.1098/rsta.2019.0155",
+          "openalex_id": "https://openalex.org/W2970796375",
+          "year": "2019"
+        },
+        {
+          "score": 65.966696,
+          "csv_row": 155878,
+          "title": "The ARM Scalable Vector Extension",
+          "summary": "This article describes the ARM Scalable Vector Extension (SVE). Several goals guided the design of the architecture. First was the need to extend the vector processing capability associated with the ARM AArch64 execution state to better address the computational requirements in domains such as high-…",
+          "id": "http://arxiv.org/abs/1803.06185v1",
+          "doi": "10.1109/MM.2017.35",
+          "openalex_id": "",
+          "year": "2018"
+        },
+        {
+          "score": 64.735782,
+          "csv_row": 139939,
+          "title": "Design and optimization of a portable LQCD Monte Carlo code using OpenACC",
+          "summary": "The present panorama of HPC architectures is extremely heterogeneous, ranging from traditional multi-core CPU processors, supporting a wide class of applications but delivering moderate computing performance, to many-core GPUs, exploiting aggressive data-parallelism and delivering higher performance…",
+          "id": "http://arxiv.org/abs/1701.00426v1",
+          "doi": "10.1142/S0129183117500632",
+          "openalex_id": "",
+          "year": "2017"
+        },
+        {
+          "score": 60.052024,
+          "csv_row": 176519,
+          "title": "The Cost of Application-Class Processing: Energy and Performance Analysis of a Linux-ready 1.7GHz 64bit RISC-V Core in 22nm FDSOI Technology",
+          "summary": "The open-source RISC-V ISA is gaining traction, both in industry and academia. The ISA is designed to scale from micro-controllers to server-class processors. Furthermore, openness promotes the availability of various open-source and commercial implementations. Our main contribution in this work is …",
+          "id": "http://arxiv.org/abs/1904.05442v1",
+          "doi": "10.1109/TVLSI.2019.2926114",
+          "openalex_id": "",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "title": "An Uncertainty-Aware Resilience Micro-Agent for Causal Observability in the Computing Continuum",
+      "summary": "Grey failures in the computing continuum produce ambiguous overlapping symptoms that existing approaches fail to diagnose reliably, either due to a lack of causal awareness or acting under high epistemic uncertainty, risking destructive interventions. This paper presents an uncertainty-aware resilience micro-agent for causal observability (AURORA), a lightweight framework for diagnosing and mitigating grey failures in edge-tier environments. The framework employs parallel micro-agents that integrate the free-energy principle, causal do-calculus, and localized causal state-graphs to support counterfactual root-cause analysis within each fault's Markov blanket. Restricting inference to causally relevant variables reduces computational overhead while preserving diagnostic fidelity. AURORA further introduces a dual-gated execution mechanism that authorizes remediation only when causal confidence is high and predicted epistemic uncertainty is bounded; otherwise, it abstains from local intervention and escalates the diagnostic payload to the fog tier. Our experiments demonstrate that AURORA outperforms baselines, achieving a 0% destructive action rate, while maintaining 62.0% repair accuracy and a 3ms mean time to repair.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 75.252557,
+          "csv_row": 181498,
+          "title": "Exploiting Epistemic Uncertainty of Anatomy Segmentation for Anomaly Detection in Retinal OCT",
+          "summary": "Diagnosis and treatment guidance are aided by detecting relevant biomarkers in medical images. Although supervised deep learning can perform accurate segmentation of pathological areas, it is limited by requiring a-priori definitions of these regions, large-scale annotations, and a representative pa…",
+          "id": "http://arxiv.org/abs/1905.12806v1",
+          "doi": "10.1109/TMI.2019.2919951",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 60.867845,
+          "csv_row": 139922,
+          "title": "Resilience Design Patterns: A Structured Approach to Resilience at Extreme Scale",
+          "summary": "Reliability is a serious concern for future extreme-scale high-performance computing (HPC) systems. While the HPC community has developed various resilience solutions, the solution space remains fragmented. There are no formal methods and metrics to integrate the various HPC resilience techniques in…",
+          "id": "http://arxiv.org/abs/1708.07422v1",
+          "doi": "10.14529/jsfi170301",
+          "openalex_id": "https://openalex.org/W2577458767",
+          "year": "2017"
+        },
+        {
+          "score": 60.370466,
+          "csv_row": 173332,
+          "title": "Scalable Resilience Against Node Failures for Communication-Hiding Preconditioned Conjugate Gradient and Conjugate Residual Methods",
+          "summary": "The observed and expected continued growth in the number of nodes in large-scale parallel computers gives rise to two major challenges: global communication operations are becoming major bottlenecks due to their limited scalability, and the likelihood of node failures is increasing. We study an appr…",
+          "id": "http://arxiv.org/abs/1912.09230v1",
+          "doi": "10.1137/1.9781611976137.8",
+          "openalex_id": "https://openalex.org/W2994731315",
+          "year": "2019"
+        },
+        {
+          "score": 59.482929,
+          "csv_row": 173762,
+          "title": "Uncertainty-aware demand management of water distribution networks in deregulated energy markets",
+          "summary": "We present an open-source solution for the operational control of drinking water distribution networks which accounts for the inherent uncertainty in water demand and electricity prices in the day-ahead market of a volatile deregulated economy. As increasingly more energy markets adopt this trading …",
+          "id": "http://arxiv.org/abs/1904.10548v1",
+          "doi": "10.1016/j.envsoft.2017.11.035",
+          "openalex_id": "https://openalex.org/W2771129410",
+          "year": "2019"
+        },
+        {
+          "score": 59.086769,
+          "csv_row": 76885,
+          "title": "On the Resilience of Routing Tables",
+          "summary": "Many modern network designs incorporate \"failover\" paths into routers' forwarding tables. We initiate the theoretical study of the conditions under which such resilient routing tables can guarantee delivery of packets.…",
+          "id": "http://arxiv.org/abs/1207.3732v2",
+          "doi": "10.1145/2332432.2332478",
+          "openalex_id": "https://openalex.org/W4298005732",
+          "year": "2012"
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "title": "Surviving Partial Rank Failures in Wide Expert-Parallel MoE Inference",
+      "summary": "Mixture-of-Experts (MoE) serving relies on wide expert parallelism (EP) to aggregate the memory capacity and bandwidth of many GPUs within one inference instance. This efficiency comes with a systems cost: every decoding step depends on token dispatch and combination across all active EP ranks, so even one rank failure can disrupt the entire service. Existing EP stacks handle such failures poorly because they treat membership as a fixed configuration established at initialization. The same rank set determines communicator state, expert placement, and the routing metadata baked into CUDA execution graphs, leaving the system with no way to shrink around a failure while keeping the instance valid.\nThis paper argues that partial-failure tolerance should instead be formulated as a live EP validity problem. We present EEP, a communication and runtime substrate that represents membership as explicit, mutable runtime state. EEP repairs the specific state invalidated by a fault: it restores peer reachability without rebuilding the communication substrate, repairs lost expert coverage through a bandwidth-aware hierarchy, and reintegrates repaired ranks without forcing healthy ranks to recapture their CUDA graphs.\nWe implement EEP in an EP serving stack integrated with SGLang and evaluate it under steady-state serving, failure recovery, and rank reintegration. The results show that explicit mutable membership preserves the steady-state fast path, staying within 4.4% of a fixed-membership DeepEP baseline under static serving, while turning a local rank fault from whole-instance downtime into two bounded interruptions. On a single-rank failure workload, EEP incurs an 11s recovery pause and an 8s reintegration pause, and restores throughput to within 95% of the pre-fault level within 52s, whereas a fixed-membership full-restart baseline remains unavailable until 348s.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 75.508652,
+          "csv_row": 107551,
+          "title": "Detour Planning for Fast and Reliable Failure Recovery in SDN with OpenState",
+          "summary": "A reliable and scalable mechanism to provide protection against a link or node failure has additional requirements in the context of SDN and OpenFlow. Not only it has to minimize the load on the controller, but it must be able to react even when the controller is unreachable. In this paper we presen…",
+          "id": "http://arxiv.org/abs/1411.7711v2",
+          "doi": "10.1109/DRCN.2015.7148981",
+          "openalex_id": "",
+          "year": "2014"
+        },
+        {
+          "score": 61.643714,
+          "csv_row": 185556,
+          "title": "Non-Markovian recovery makes complex networks more resilient against large-scale failures",
+          "summary": "Non-Markovian spontaneous recovery processes with a time delay (memory) are ubiquitous in the real world. How does the non-Markovian characteristic affect failure propagation in complex networks? We consider failures due to internal causes at the nodal level and external failures due to an adverse e…",
+          "id": "http://arxiv.org/abs/1902.07594v2",
+          "doi": "10.1038/s41467-020-15860-2",
+          "openalex_id": "https://openalex.org/W3028060897",
+          "year": "2019"
+        },
+        {
+          "score": 61.534815,
+          "csv_row": 140813,
+          "title": "Reliable Virtual Machine Placement and Routing in Clouds",
+          "summary": "In current cloud computing systems, when leveraging virtualization technology, the customer's requested data computing or storing service is accommodated by a set of communicated virtual machines (VM) in a scalable and elastic manner. These VMs are placed in one or more server nodes according to the…",
+          "id": "http://arxiv.org/abs/1701.06005v3",
+          "doi": "10.1109/TPDS.2017.2693273",
+          "openalex_id": "",
+          "year": "2017"
+        },
+        {
+          "score": 60.943126,
+          "csv_row": 173672,
+          "title": "Analysis of Memory Capacity for Deep Echo State Networks",
+          "summary": "In this paper, the echo state network (ESN) memory capacity, which represents the amount of input data an ESN can store, is analyzed for a new type of deep ESNs. In particular, two deep ESN architectures are studied. First, a parallel deep ESN is proposed in which multiple reservoirs are connected i…",
+          "id": "http://arxiv.org/abs/1908.07063v1",
+          "doi": "10.1109/ICMLA.2018.00072",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 59.110212,
+          "csv_row": 126100,
+          "title": "Multiple Service Chain Placement and Routing in a Network-enabled Cloud",
+          "summary": "Network Function Virtualization (NFV) aims to abstract the functionality of traditional proprietary hardware into software as Virtual Network Functions (VNFs), which can run on commercial off the shelf (COTS) servers. Besides reducing dependency on proprietary support, NFV helps network operators to…",
+          "id": "http://arxiv.org/abs/1611.03197v1",
+          "doi": "10.1109/ANTS.2017.8384191",
+          "openalex_id": "",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "title": "Accelerating Compound LLM Training Workloads with Maestro",
+      "summary": "Compound LLM training workloads-such as knowledge distillation and multimodal LLM (MLLM) training-are gaining prominence. These typically comprise heterogeneous components differing in parameter scale, execution mode (forward-only or full forward-backward), and sequence length. Besides, component activation can be data-dependent: in MLLM training, modality-specific parts activate only when inputs contain corresponding modalities, causing dynamic computational paths and irregular runtime workloads. Conventional frameworks, designed for monolithic models, cannot handle the dual heterogeneity-static (across components) and dynamic (runtime). By enforcing one-size-fits-all training configurations across components and ignoring input-induced variations, they suffer suboptimal throughput and poor GPU utilization. In this paper, we introduce Maestro, a section-centric training framework that addresses both challenges. Maestro first restructures the workload into a coarse-grained section graph. Each section independently configures its parallelism strategy, micro-batch size, and data-parallel degree-enabling fine-grained, component-aware resource allocation to tackle static heterogeneity. To tackle runtime irregularity, Maestro introduces a wavefront scheduling algorithm that dynamically reorders input samples to orchestrate concurrent section execution while preserving cross-section data dependencies. This maximizes inter-section parallelism and minimizes stalls, boosting hardware utilization. Deployed in production for millions of GPU hours, Maestro reduces GPU consumption by ~40% on key workloads-including knowledge distillation and MLLM training-validating its real-world impact.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 128.737705,
+          "csv_row": 173564,
+          "title": "Taming Unbalanced Training Workloads in Deep Learning with Partial Collective Operations",
+          "summary": "Load imbalance pervasively exists in distributed deep learning training systems, either caused by the inherent imbalance in learned tasks or by the system itself. Traditional synchronous Stochastic Gradient Descent (SGD) achieves good accuracy for a wide variety of tasks, but relies on global synchr…",
+          "id": "http://arxiv.org/abs/1908.04207v5",
+          "doi": "10.1145/3332466.3374528",
+          "openalex_id": "https://openalex.org/W2967558351",
+          "year": "2019"
+        },
+        {
+          "score": 84.277193,
+          "csv_row": 172824,
+          "title": "Learning Lightweight Pedestrian Detector with Hierarchical Knowledge Distillation",
+          "summary": "It remains very challenging to build a pedestrian detection system for real world applications, which demand for both accuracy and speed. This work presents a novel hierarchical knowledge distillation framework to learn a lightweight pedestrian detector, which significantly reduces the computational…",
+          "id": "http://arxiv.org/abs/1909.09325v1",
+          "doi": "10.1109/ICIP.2019.8803079",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 76.830842,
+          "csv_row": 155501,
+          "title": "Low-resolution Face Recognition in the Wild via Selective Knowledge Distillation",
+          "summary": "Typically, the deployment of face recognition models in the wild needs to identify low-resolution faces with extremely low computational cost. To address this problem, a feasible solution is compressing a complex face model to achieve higher speed and lower memory at the cost of minimal performance …",
+          "id": "http://arxiv.org/abs/1811.09998v2",
+          "doi": "10.1109/TIP.2018.2883743",
+          "openalex_id": "",
+          "year": "2018"
+        },
+        {
+          "score": 76.358475,
+          "csv_row": 163542,
+          "title": "Optimizing speed/accuracy trade-off for person re-identification via knowledge distillation",
+          "summary": "Finding a person across a camera network plays an important role in video surveillance. For a real-world person re-identification application, in order to guarantee an optimal time response, it is crucial to find the balance between accuracy and speed. We analyse this trade-off, comparing a classica…",
+          "id": "http://arxiv.org/abs/1812.02937v2",
+          "doi": "10.1016/j.engappai.2019.103309",
+          "openalex_id": "https://openalex.org/W2905292968",
+          "year": "2018"
+        },
+        {
+          "score": 75.492314,
+          "csv_row": 141879,
+          "title": "Accelerating recurrent neural network training using sequence bucketing and multi-GPU data parallelization",
+          "summary": "An efficient algorithm for recurrent neural network training is presented. The approach increases the training speed for tasks where a length of the input sequence may vary significantly. The proposed approach is based on the optimal batch bucketing by input sequence length and data parallelization …",
+          "id": "http://arxiv.org/abs/1708.05604v1",
+          "doi": "10.1109/DSMP.2016.7583516",
+          "openalex_id": "",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "title": "Privacy-preserving Chunk Scheduling in a BitTorrent Implementation of Federated Learning",
+      "summary": "Traditional federated learning (FL) relies on a central aggregator server, which can create performance bottlenecks and privacy risks. Decentralized mix-and-forward designs remove the server, but repeated local mixing can attenuate global information under heterogeneity and exposes peer-to-peer neighborhoods as a privacy attack surface. To preserve FedAvg-style aggregation semantics (over updates reconstructable by the round deadline) while scaling dissemination, we present FLTorrent, a BitTorrent-based dissemination layer for serverless FL with a short warm-up. Warm-up hardens within-round source unlinkability -- a dissemination-layer goal orthogonal to content protections (e.g., DP or secure aggregation) -- via (i) pre-round obfuscation, (ii) randomized lags, and (iii) coordination-only non-owner-first scheduling (tracker off the data path), before switching to vanilla BitTorrent swarming. We upper-bound the per-transfer attribution posterior by the fraction of owner chunks in a sender's eligible cover set, and derive a tighter high-probability bound that improves with early non-owner mass. A simple heuristic, GreedyFastestFirst, attains approximately 92% of a bandwidth-optimal max-flow upper bound, while warm-up remains a stable approximately 12% share of a round across 100--500 peers. Under an observation-only local adversary, FLTorrent drives attribution success close to neighborhood-level random guessing for typical nodes, improves with network size, and remains robust under collusion. In LLM-scale stress tests (Gemma-7B, DeepSeek-R1-14B, Qwen2.5-32B, and Llama-3.3-70B) over 7--10 Gbps access links, FLTorrent adds only approximately 6--10% end-to-end overhead relative to BitTorrent-only. Overall, FLTorrent shows that within-round unlinkability and BitTorrent-level efficiency can co-exist with predictable, low overheads at scale.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 180.899168,
+          "csv_row": 172726,
+          "title": "A Crowdsourcing Framework for On-Device Federated Learning",
+          "summary": "Federated learning (FL) rests on the notion of training a global model in a decentralized manner. Under this setting, mobile devices perform computations on their local data before uploading the required updates to improve the global model. However, when the participating clients implement an uncoor…",
+          "id": "http://arxiv.org/abs/1911.01046v2",
+          "doi": "10.1109/TWC.2020.2971981",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 161.742357,
+          "csv_row": 157034,
+          "title": "Federated Learning with Non-IID Data",
+          "summary": "Federated learning enables resource-constrained edge compute devices, such as mobile phones and IoT devices, to learn a shared model for prediction, while keeping the training data local. This decentralized approach to train models provides privacy, security, regulatory and economic benefits. In thi…",
+          "id": "http://arxiv.org/abs/1806.00582v2",
+          "doi": "10.48550/arXiv.1806.00582",
+          "openalex_id": "",
+          "year": "2018"
+        },
+        {
+          "score": 161.520721,
+          "csv_row": 173466,
+          "title": "SAFA: a Semi-Asynchronous Protocol for Fast Federated Learning with Low Overhead",
+          "summary": "Federated learning (FL) has attracted increasing attention as a promising approach to driving a vast number of end devices with artificial intelligence. However, it is very challenging to guarantee the efficiency of FL considering the unreliable nature of end devices while the cost of device-server …",
+          "id": "http://arxiv.org/abs/1910.01355v4",
+          "doi": "10.1109/TC.2020.2994391",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 152.830694,
+          "csv_row": 181061,
+          "title": "A Survey on Federated Learning Systems: Vision, Hype and Reality for Data Privacy and Protection",
+          "summary": "Federated learning has been a hot research topic in enabling the collaborative training of machine learning models among different organizations under the privacy restrictions. As researchers try to support more machine learning models with different privacy-preserving approaches, there is a require…",
+          "id": "http://arxiv.org/abs/1907.09693v7",
+          "doi": "10.1109/TKDE.2021.3124599",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 152.032719,
+          "csv_row": 173373,
+          "title": "Federated Learning with Bayesian Differential Privacy",
+          "summary": "We consider the problem of reinforcing federated learning with formal privacy guarantees. We propose to employ Bayesian differential privacy, a relaxation of differential privacy for similarly distributed data, to provide sharper privacy loss bounds. We adapt the Bayesian privacy accounting method t…",
+          "id": "http://arxiv.org/abs/1911.10071v1",
+          "doi": "10.1109/BigData47090.2019.9005465",
+          "openalex_id": "",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "title": "HiRL: Hierarchical Reinforcement Learning for Coordinated Resource Management in Heterogeneous Edge Computing",
+      "summary": "Edge computing faces unprecedented resource orchestration challenges from multi-dimensional heterogeneity across device architectures, diverse task requirements in CPU-intensive, GPU-intensive, I/O-intensive, and dynamic network conditions. The edge environments demand real-time task processing within strict energy budgets, yet conventional approaches struggle with mixed continuous-discrete optimization while meeting deadline and energy constraints. This paper presents HiRL, a hierarchical reinforcement learning framework that decomposes complex resource orchestration into coordinated power control and task allocation decisions. Our approach separates continuous power management using the Twin Delayed Deep Deterministic Policy Gradient (TD3) and discrete task placement using Double Deep Q-Network (DDQN), unified through a coordination engine with five-dimensional queue state representation. We propose a heterogeneous assessment of resource compatibility with deadline-oriented prioritization and failure-penalized adaptive sampling to enhance decision quality under resource constraints. To improve practical applicability, the framework models comprehensive system dynamics including device mobility, queue congestion patterns, infrastructure heterogeneity, and priority-sensitive scheduling demands. Experimental results show that HiRL achieves effective latency-energy trade-offs with 28% latency reduction compared to Single-DDQN and maintains nearly 100% task completion rates under all load conditions. Compared to baseline algorithms, HiRL reduces energy consumption by up to 51% under low load while achieving 24% better latency performance than static optimization approaches under high load, establishing effective resource orchestration in heterogeneous edge environments.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 326.599884,
+          "csv_row": 99813,
+          "title": "Energy-Efficient and Thermal-Aware Resource Management for Heterogeneous Datacenters",
+          "summary": "We propose in this paper to study the energy-, thermal- and performance-aware resource management in heterogeneous datacenters. Witnessing the continuous development of heterogeneity in datacenters, we are confronted with their different behaviors in terms of performance, power consumption and therm…",
+          "id": "http://arxiv.org/abs/1410.3104v1",
+          "doi": "10.1016/j.suscom.2014.08.005",
+          "openalex_id": "https://openalex.org/W2042336578",
+          "year": "2014"
+        },
+        {
+          "score": 296.386222,
+          "csv_row": 176134,
+          "title": "Aggregating E-commerce Search Results from Heterogeneous Sources via Hierarchical Reinforcement Learning",
+          "summary": "In this paper, we investigate the task of aggregating search results from heterogeneous sources in an E-commerce environment. First, unlike traditional aggregated web search that merely presents multi-sourced results in the first page, this new task may present aggregated results in all pages and ha…",
+          "id": "http://arxiv.org/abs/1902.08882v1",
+          "doi": "10.1145/3308558.3313455",
+          "openalex_id": "https://openalex.org/W2912454685",
+          "year": "2019"
+        },
+        {
+          "score": 267.8823,
+          "csv_row": 176052,
+          "title": "Dot-to-Dot: Explainable Hierarchical Reinforcement Learning for Robotic Manipulation",
+          "summary": "Robotic systems are ever more capable of automation and fulfilment of complex tasks, particularly with reliance on recent advances in intelligent systems, deep learning and artificial intelligence. However, as robots and humans come closer in their interactions, the matter of interpretability, or ex…",
+          "id": "http://arxiv.org/abs/1904.06703v2",
+          "doi": "10.1109/IROS40897.2019.8968488",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 242.876893,
+          "csv_row": 96530,
+          "title": "Base Station Activation and Linear Transceiver Design for Optimal Resource Management in Heterogeneous Networks",
+          "summary": "In a densely deployed heterogeneous network (HetNet), the number of pico/micro base stations (BS) can be comparable with the number of the users. To reduce the operational overhead of the HetNet, proper identification of the set of serving BSs becomes an important design issue. In this work, we show…",
+          "id": "http://arxiv.org/abs/1309.4138v1",
+          "doi": "10.1109/TSP.2014.2331611",
+          "openalex_id": "",
+          "year": "2013"
+        },
+        {
+          "score": 217.052544,
+          "csv_row": 156151,
+          "title": "Resource Management in Fog/Edge Computing: A Survey",
+          "summary": "Contrary to using distant and centralized cloud data center resources, employing decentralized resources at the edge of a network for processing data closer to user devices, such as smartphones and tablets, is an upcoming computing paradigm, referred to as fog/edge computing. Fog/edge resources are …",
+          "id": "http://arxiv.org/abs/1810.00305v1",
+          "doi": "10.1145/3326066",
+          "openalex_id": "https://openalex.org/W2894001169",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "title": "FractalSortCPU: Bandwidth-Efficient Compressed Radix Sort on CPU",
+      "summary": "Cloud database systems, particularly their middleware and query execution layers, use sorting as a core operation in query processing, indexing and join execution. Distribution-dependence and limited parallelism are key issues inherent in state-of-the-art radix sort which is preferred for large datasets due to performance advantages over comparison-based algorithms. Multi-pass bucketing, stochastic sampling and dependence graph structures are common solutions to these problems that incur the cost of data pre-processing and increased memory footprint hence they are less appropriate for large-scale workloads common in cloud environments. In-place radix sort schemes increase the number of passes as precision increases, which negatively impacts latency.\nOur work solves these problems by introducing a CPU-adapted histogram compression scheme for radix sorting for arbitrary-precision keys implemented on the CPU for increased accessibility, providing state-of-the-art execution time, while limiting histogram growth. Fully parallel key-based histogram updates eliminate the need for input bucketing and data pre-processing further lowering latency, mitigating distribution-dependence and reducing complexity. With a parallelized sorting architecture utilizing SIMD-accelerated operations for low latency, the algorithm demonstrates improvement over the state-of-the-art on the CPU, GPU, and FPGA by 6x, 3x and 2.5x in bandwidth efficiency on 512MB to 32GB data sets at 16-bit precision.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 269.091654,
+          "csv_row": 125660,
+          "title": "A Memory Bandwidth-Efficient Hybrid Radix Sort on GPUs",
+          "summary": "Sorting is at the core of many database operations, such as index creation, sort-merge joins, and user-requested output sorting. As GPUs are emerging as a promising platform to accelerate various operations, sorting on GPUs becomes a viable endeavour. Over the past few years, several improvements ha…",
+          "id": "http://arxiv.org/abs/1611.01137v2",
+          "doi": "10.1145/3035918.3064043",
+          "openalex_id": "https://openalex.org/W2547543723",
+          "year": "2016"
+        },
+        {
+          "score": 80.733427,
+          "csv_row": 57584,
+          "title": "Importance of Explicit Vectorization for CPU and GPU Software Performance",
+          "summary": "Much of the current focus in high-performance computing is on multi-threading, multi-computing, and graphics processing unit (GPU) computing.  However, vectorization and non-parallel optimization techniques, which can often be employed additionally, are less frequently discussed.  In this paper, we …",
+          "id": "http://arxiv.org/abs/1004.0024v1",
+          "doi": "10.1016/j.jcp.2011.03.041",
+          "openalex_id": "https://openalex.org/W1895381303",
+          "year": "2010"
+        },
+        {
+          "score": 77.723048,
+          "csv_row": 93015,
+          "title": "Radix Conversion for IEEE754-2008 Mixed Radix Floating-Point Arithmetic",
+          "summary": "Conversion between binary and decimal floating-point representations is ubiquitous. Floating-point radix conversion means converting both the exponent and the mantissa. We develop an atomic operation for FP radix conversion with simple straight-line algorithm, suitable for hardware design. Exponent …",
+          "id": "http://arxiv.org/abs/1312.0455v1",
+          "doi": "10.1109/ACSSC.2013.6810471",
+          "openalex_id": "",
+          "year": "2013"
+        },
+        {
+          "score": 75.107831,
+          "csv_row": 87812,
+          "title": "Dynamic autotuning of adaptive fast multipole methods on hybrid multicore CPU & GPU systems",
+          "summary": "We discuss an implementation of adaptive fast multipole methods targeting hybrid multicore CPU- and GPU-systems. From previous experiences with the computational profile of our version of the fast multipole algorithm, suitable parts are off-loaded to the GPU, while the remaining parts are threaded a…",
+          "id": "http://arxiv.org/abs/1311.1006v3",
+          "doi": "10.1137/130943595",
+          "openalex_id": "https://openalex.org/W2114297064",
+          "year": "2013"
+        },
+        {
+          "score": 74.687104,
+          "csv_row": 125823,
+          "title": "Tensor Contractions with Extended BLAS Kernels on CPU and GPU",
+          "summary": "Tensor contractions constitute a key computational ingredient of numerical multi-linear algebra. However, as the order and dimension of tensors grow, the time and space complexities of tensor-based computations grow quickly. Existing approaches for tensor contractions typically involves explicit cop…",
+          "id": "http://arxiv.org/abs/1606.05696v2",
+          "doi": "10.1109/HiPC.2016.031",
+          "openalex_id": "",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "title": "Amortized Asynchronous Byzantine Reliable Broadcast with Optimal Resilience",
+      "summary": "Byzantine Reliable Broadcast (BRB) is a fundamental primitive in distributed computing and cryptographic systems. Reducing the communication complexity of BRB protocols remains an important research direction. However, most work focuses on synchronous networks, with limited attention to the more challenging setting of network \\textit{asynchrony}.\nAchieving sub-quadratic communication for asynchronous BRB typically requires probabilistic approaches that sacrifice optimal f=\\frac{n}{3} resilience. In this work, we present a multi-shot BRB algorithm for asynchronous networks that maintains optimal resilience through an underutilized technique: \\textit{amortization}. Our protocol structures BRB across multiple rounds, where each round provides incremental additive guarantees. Once these initial rounds complete, each subsequent BRB instance requires only a single additional round.\nThis amortization strategy achieves asymptotic optimal O(n|m|) message complexity when messages are sufficiently large, with \\Omega(n) round complexity in the worst case. Under favorable conditions, an optimistic delivery path reduces the round complexity to \\Omega(1).",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 574.861196,
+          "csv_row": 112543,
+          "title": "Trading off $t$-Resilience for Efficiency in Asynchronous Byzantine Reliable Broadcast",
+          "summary": "This paper presents a simple and efficient reliable broadcast algorithm for asynchronous message-passing systems made up of $n$ processes, among which up to $t<n/5$ may behave arbitrarily (Byzantine processes). This algorithm requires two communication steps and $n^2-1$ messages. When compared to Br…",
+          "id": "http://arxiv.org/abs/1510.06882v2",
+          "doi": "10.1142/S0129626416500171",
+          "openalex_id": "",
+          "year": "2015"
+        },
+        {
+          "score": 366.859407,
+          "csv_row": 173570,
+          "title": "Scalable Byzantine Reliable Broadcast (Extended Version)",
+          "summary": "Byzantine reliable broadcast is a powerful primitive that allows a set of processes to agree on a message from a designated sender, even if some processes (including the sender) are Byzantine. Existing broadcast protocols for this setting scale poorly, as they typically build on quorum systems with …",
+          "id": "http://arxiv.org/abs/1908.01738v3",
+          "doi": "10.4230/LIPIcs.DISC.2019.22",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 171.517226,
+          "csv_row": 112627,
+          "title": "Efficient counting with optimal resilience",
+          "summary": "Consider a complete communication network of $n$ nodes, where the nodes receive a common clock pulse. We study the synchronous $c$-counting problem: given any starting state and up to $f$ faulty nodes with arbitrary behaviour, the task is to eventually have all correct nodes labeling the pulses with…",
+          "id": "http://arxiv.org/abs/1508.02535v3",
+          "doi": "10.1137/16M107877X",
+          "openalex_id": "",
+          "year": "2015"
+        },
+        {
+          "score": 170.174589,
+          "csv_row": 76851,
+          "title": "On Byzantine Broadcast in Loosely Connected Networks",
+          "summary": "We consider the problem of reliably broadcasting information in a multihop asynchronous network that is subject to Byzantine failures. Most existing approaches give conditions for perfect reliable broadcast (all correct nodes deliver the authentic message and nothing else), but they require a highly…",
+          "id": "http://arxiv.org/abs/1209.1358v1",
+          "doi": "10.1007/978-3-642-33651-5_18",
+          "openalex_id": "https://openalex.org/W2109029570",
+          "year": "2012"
+        },
+        {
+          "score": 161.039627,
+          "csv_row": 173599,
+          "title": "On the Round Complexity of Randomized Byzantine Agreement",
+          "summary": "We prove lower bounds on the round complexity of randomized Byzantine agreement (BA) protocols, bounding the halting probability of such protocols after one and two rounds. In particular, we prove that:\n  (1) BA protocols resilient against $n/3$ [resp., $n/4$] corruptions terminate (under attack) at…",
+          "id": "http://arxiv.org/abs/1907.11329v4",
+          "doi": "10.1007/s00145-022-09421-7",
+          "openalex_id": "https://openalex.org/W2965940211",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "title": "Edge-Cloud Collaborative Pothole Detection via Onboard Event Screening and Federated Temporal Segmentation",
+      "summary": "Road potholes threaten driving safety and increase infrastructure maintenance costs, while large-scale and timely pothole detection remains challenging in urban road networks. Vehicle-mounted vibration sensing offers a low-cost and scalable solution, however, continuous transmission of raw acceleration streams causes high communication overhead. Also, vibration patterns induced by potholes are often confused with those caused by manholes, speed bumps, and other local road structures. To address these challenges, this paper proposes an edge-cloud collaborative pothole detection framework based on onboard vibration event screening and federated temporal segmentation. At the vehicle side, a Gaussian Mixture Model (GMM)-based module adaptively models background vibration and screens candidate abnormal events from continuous acceleration streams. The onboard module acts as a lightweight high-recall filter and uploads only compact candidate event segments with their contextual information. At the server side, pothole detection is formulated as a point-wise temporal segmentation task. A 1D Attention U-Net is developed to distinguish potholes from vibration-similar road events by capturing multi-scale temporal features and preserving event boundary information. Furthermore, the model is trained under a federated learning framework to exploit distributed multi-vehicle data while accommodating non-IID vehicle data distributions. Experiments on multi-vehicle vibration sensing data show that the proposed framework reduces unnecessary data transmission from smooth road segments and improves fine-grained pothole detection under both centralized and federated settings.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 116.991687,
+          "csv_row": 157034,
+          "title": "Federated Learning with Non-IID Data",
+          "summary": "Federated learning enables resource-constrained edge compute devices, such as mobile phones and IoT devices, to learn a shared model for prediction, while keeping the training data local. This decentralized approach to train models provides privacy, security, regulatory and economic benefits. In thi…",
+          "id": "http://arxiv.org/abs/1806.00582v2",
+          "doi": "10.48550/arXiv.1806.00582",
+          "openalex_id": "",
+          "year": "2018"
+        },
+        {
+          "score": 100.235535,
+          "csv_row": 173466,
+          "title": "SAFA: a Semi-Asynchronous Protocol for Fast Federated Learning with Low Overhead",
+          "summary": "Federated learning (FL) has attracted increasing attention as a promising approach to driving a vast number of end devices with artificial intelligence. However, it is very challenging to guarantee the efficiency of FL considering the unreliable nature of end devices while the cost of device-server …",
+          "id": "http://arxiv.org/abs/1910.01355v4",
+          "doi": "10.1109/TC.2020.2994391",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 96.341942,
+          "csv_row": 173551,
+          "title": "Federated Learning: Challenges, Methods, and Future Directions",
+          "summary": "Federated learning involves training statistical models over remote devices or siloed data centers, such as mobile phones or hospitals, while keeping data localized. Training in heterogeneous and potentially massive networks introduces novel challenges that require a fundamental departure from stand…",
+          "id": "http://arxiv.org/abs/1908.07873v1",
+          "doi": "10.1109/MSP.2020.2975749",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 90.324641,
+          "csv_row": 181061,
+          "title": "A Survey on Federated Learning Systems: Vision, Hype and Reality for Data Privacy and Protection",
+          "summary": "Federated learning has been a hot research topic in enabling the collaborative training of machine learning models among different organizations under the privacy restrictions. As researchers try to support more machine learning models with different privacy-preserving approaches, there is a require…",
+          "id": "http://arxiv.org/abs/1907.09693v7",
+          "doi": "10.1109/TKDE.2021.3124599",
+          "openalex_id": "",
+          "year": "2019"
+        },
+        {
+          "score": 89.40104,
+          "csv_row": 156856,
+          "title": "Functional Federated Learning in Erlang (ffl-erl)",
+          "summary": "The functional programming language Erlang is well-suited for concurrent and distributed applications. Numerical computing, however, is not seen as one of its strengths. The recent introduction of Federated Learning, a concept according to which client devices are leveraged for decentralized machine…",
+          "id": "http://arxiv.org/abs/1808.08143v3",
+          "doi": "10.1007/978-3-030-16202-3_10",
+          "openalex_id": "https://openalex.org/W2888110581",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "title": "Lakestream: A Consistent and Brokerless Data Plane for Large Foundation Model Training",
+      "summary": "Modern Large Foundation Model (LFM) training has transformed the data pipeline from a static ingestion layer into a dynamic component that must co-evolve with the training process. Existing systems are ill-equipped: colocated dataloaders offer no failure isolation, while message queue-based disaggregated dataloaders operate on a record/offset abstraction that cannot express the batch-level semantics required by distributed training.\nWe present Lakestream, a brokerless, object-store-native training data plane with three key properties. First, it introduces the Transactional Global Batch (TGB), which builds on lakehouse-style ACID storage semantics and extends them with training-specific consistency, including atomic all-rank batch visibility, a globally ordered step sequence, checkpoint-aligned lifecycle management, and end-to-end exactly-once recovery. Second, it realizes recovery and retention directly in the storage layer, by inlining producer state in the manifest and tying reclamation to distributed checkpoint state. Third, its Decentralized Adaptive Commit (DAC) algorithm sustains stable ingestion throughput as the manifest grows, without any inter-producer communication.\nEvaluations on large-scale multimodal pre-training and SFT workloads using 64 GPUs show that Lakestream outperforms colocated dataloader throughput while providing full failure isolation, outperforms Apache Kafka in ingestion throughput, and achieves lower consumer read latency than Kafka.",
+      "target_found_in_csv": 0,
+      "similar": [
+        {
+          "score": 71.143976,
+          "csv_row": 131670,
+          "title": "A Framework for Parallel and Distributed Training of Neural Networks",
+          "summary": "The aim of this paper is to develop a general framework for training neural networks (NNs) in a distributed environment, where training data is partitioned over a set of agents that communicate with each other through a sparse, possibly time-varying, connectivity pattern. In such distributed scenari…",
+          "id": "http://arxiv.org/abs/1610.07448v3",
+          "doi": "10.1016/j.neunet.2017.04.004",
+          "openalex_id": "https://openalex.org/W2543147921",
+          "year": "2016"
+        },
+        {
+          "score": 70.63264,
+          "csv_row": 181032,
+          "title": "Distributed Equivalent Substitution Training for Large-Scale Recommender Systems",
+          "summary": "We present Distributed Equivalent Substitution (DES) training, a novel distributed training framework for large-scale recommender systems with dynamic sparse features. DES introduces fully synchronous training to large-scale recommendation system for the first time by reducing communication, thus ma…",
+          "id": "http://arxiv.org/abs/1909.04823v5",
+          "doi": "10.1145/3397271.3401113",
+          "openalex_id": "https://openalex.org/W2972779668",
+          "year": "2019"
+        },
+        {
+          "score": 65.566242,
+          "csv_row": 159033,
+          "title": "Variance Suppression: Balanced Training Process in Deep Learning",
+          "summary": "Stochastic gradient descent updates parameters with summation gradient computed from a random data batch. This summation will lead to unbalanced training process if the data we obtained is unbalanced. To address this issue, this paper takes the error variance and error mean both into consideration. …",
+          "id": "http://arxiv.org/abs/1811.08163v3",
+          "doi": "10.1088/1742-6596/1207/1/012013",
+          "openalex_id": "https://openalex.org/W2900667084",
+          "year": "2018"
+        },
+        {
+          "score": 64.498089,
+          "csv_row": 118064,
+          "title": "Composite Correlation Quantization for Efficient Multimodal Retrieval",
+          "summary": "Efficient similarity retrieval from large-scale multimodal database is pervasive in modern search engines and social networks. To support queries across content modalities, the system should enable cross-modal correlation and computation-efficient indexing. While hashing methods have shown great pot…",
+          "id": "http://arxiv.org/abs/1504.04818v2",
+          "doi": "10.1145/2911451.2911493",
+          "openalex_id": "https://openalex.org/W2337086876",
+          "year": "2015"
+        },
+        {
+          "score": 63.057458,
+          "csv_row": 160303,
+          "title": "L1-Norm Batch Normalization for Efficient Training of Deep Neural Networks",
+          "summary": "Batch Normalization (BN) has been proven to be quite effective at accelerating and improving the training of deep neural networks (DNNs). However, BN brings additional computation, consumes more memory and generally slows down the training process by a large margin, which aggravates the training eff…",
+          "id": "http://arxiv.org/abs/1802.09769v1",
+          "doi": "10.1109/TNNLS.2018.2876179",
+          "openalex_id": "",
+          "year": "2018"
+        }
+      ]
+    }
+  ]
+}
